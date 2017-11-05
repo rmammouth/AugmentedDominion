@@ -1,0 +1,17 @@
+<Cards>
+  <Card id="Chapel">
+  You cannot trash the Chapel itself, since it is not in your hand after you play it.
+  </Card>
+  
+  <Card id="Smithy">
+  You draw 3 cards.
+  </Card>
+  
+  <Card id="Market">
+  You draw a card and get +1 Action, +1$, and +1 Buy.
+  </Card>
+  
+  <Card id="Village">
+  You draw a card and get +2 Actions.
+  </Card>
+</Cards>
