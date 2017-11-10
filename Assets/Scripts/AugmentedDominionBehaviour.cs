@@ -17,7 +17,7 @@ namespace AugmentedDominion
       TextAsset textAsset = (TextAsset)Resources.Load("cards", typeof(TextAsset));
       XmlDocument xmlCards = new XmlDocument();
       xmlCards.LoadXml(textAsset.text);
-      XmlNodeList xmlCardsList=xmlCards.SelectNodes("/Cards/Card");
+      XmlNodeList xmlCardsList=xmlCards.SelectNodes("//Card");
       foreach (XmlNode xmlCard in xmlCardsList)
       {
         InitCard(xmlCard);
