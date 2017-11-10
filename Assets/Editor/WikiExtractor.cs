@@ -39,14 +39,13 @@ public class WikiExtractor : ScriptableObject
     {
       Debug.LogError(ex);
     }
-
   }
 
 
   static int ExtractSet(XmlNode xmlSetA, XmlElement elmCards)
   {
     string setName = xmlSetA.InnerText;
-    if ((setName != "Dominion") && (setName != "Hinterlands")) return 0;
+    if (setName != "Dominion") return 0;
     Debug.Log(setName + " => " + xmlSetA.Attributes["href"].InnerText);
 
     XmlElement elmSet = elmCards.OwnerDocument.CreateElement("Set");
@@ -86,7 +85,7 @@ public class WikiExtractor : ScriptableObject
     XmlNode xmlUlFAQ = xmlCardPage.SelectSingleNode("//div[@id='mw-content-text']/ul");
     foreach (XmlNode xmlLiFAQ in xmlUlFAQ.ChildNodes)
     {
-      text += "*"+xmlLiFAQ.InnerText;
+      text += "*" + FormatText(xmlLiFAQ);
     }
     elmCard.InnerText = text;
 
@@ -100,5 +99,35 @@ public class WikiExtractor : ScriptableObject
     }
 
     return 1;
+  }
+
+  static string FormatText(XmlNode node)
+  {
+    if (node is XmlText) return node.InnerText;
+    else if (node is XmlElement)
+    {
+      XmlElement elm = (XmlElement)node;
+      if (elm.HasChildNodes)
+      {
+        string subText = "";
+        foreach (XmlNode subNode in node.ChildNodes)
+        {
+          subText += FormatText(subNode);
+        }
+        return subText;
+      }
+      else if (elm.Name == "img")
+      {
+        string imgName = elm.Attributes["alt"].InnerText;
+        string spriteName="";
+        if (imgName == "Coin.png") spriteName = "Coins_blank";
+        else if (imgName.StartsWith("Coin")) spriteName = "Coins_" + imgName.Substring(4, 1);
+        else return "";
+
+        return "<sprite=\"Coins\" name=\""+spriteName+"\">";
+      }
+      else return elm.Name;
+    }
+    else return "";
   }
 }

@@ -6,18 +6,10 @@ namespace AugmentedDominion
 {
   public class DominionCardTargetBehaviour : ImageTargetBehaviour
   {
-    private Canvas canvasObject;
-    private Text cardNameText;
-    private Text cardDescriptionText;
-    public string CardDescription { get;  set; }
-
     protected override void Awake()
     {
       base.Awake();
-      canvasObject = GameObject.Find("CardInfoCanvas").GetComponent<Canvas>();
-      canvasObject.enabled = false;
-      cardNameText = GameObject.Find("CardNameText").GetComponent<Text>();
-      cardDescriptionText = GameObject.Find("CardDescriptionText").GetComponent<Text>();
+
       TargetFound += OnTargetFound;
       TargetLost += OnTargetLost;
       TargetLoad += OnTargetLoad;
@@ -27,25 +19,27 @@ namespace AugmentedDominion
     void OnTargetFound(TargetAbstractBehaviour behaviour)
     {
       Debug.Log("Found: " + Target.Name);
-      canvasObject.enabled = true;
-      cardNameText.text = Target.Name;
-      cardDescriptionText.text = CardDescription;
+      DominionCard card = DominionCard.getCard(Target.Name);
+      AugmentedDominionBehaviour.Instance.OnCardFound(card);
     }
 
     void OnTargetLost(TargetAbstractBehaviour behaviour)
     {
       Debug.Log("Lost: " + Target.Name);
-      canvasObject.enabled = false;
+      DominionCard card = DominionCard.getCard(Target.Name);
+      AugmentedDominionBehaviour.Instance.OnCardLost(card);
     }
 
     void OnTargetLoad(ImageTargetBaseBehaviour behaviour, ImageTrackerBaseBehaviour tracker, bool status)
     {
       Debug.Log("Load target (" + status + "): " + Target.Id + " (" + Target.Name + ") " + " -> " + tracker);
+      AugmentedDominionBehaviour.Instance.OnCardLoad();
     }
 
     void OnTargetUnload(ImageTargetBaseBehaviour behaviour, ImageTrackerBaseBehaviour tracker, bool status)
     {
       Debug.Log("Unload target (" + status + "): " + Target.Id + " (" + Target.Name + ") " + " -> " + tracker);
+      AugmentedDominionBehaviour.Instance.OnCardUnload();
     }
   }
 }
