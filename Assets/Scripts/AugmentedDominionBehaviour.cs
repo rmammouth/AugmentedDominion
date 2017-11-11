@@ -56,7 +56,7 @@ namespace AugmentedDominion
       string cardId = xmlCard.Attributes["id"].InnerText;
       DominionCard card = new DominionCard(cardId, cardId, xmlCard.ParentNode.Attributes["id"].InnerText, xmlCard.InnerText);
 
-      Debug.Log("instantiating " + cardId);
+      Debug.Log("instantiating " + card.getId());
       GameObject goCard=Instantiate(cardPrefab);      
       DominionCardTargetBehaviour behaviour= goCard.GetComponent<DominionCardTargetBehaviour>();
       behaviour.Path = cardId + ".jpg";
@@ -90,10 +90,13 @@ namespace AugmentedDominion
 
     private void UpdateLoadingText()
     {
-      loadingText.text = cardsLoaded+"/"+DominionCard.getCardsCount()+" cards loaded";
-      if (cardsLoaded >= DominionCard.getCardsCount())
+      if (loadingText != null)
       {
-        loadingText.enabled = false;
+        loadingText.text = cardsLoaded + "/" + DominionCard.getCardsCount() + " cards loaded";
+        if (cardsLoaded >= DominionCard.getCardsCount())
+        {
+          loadingText.enabled = false;
+        }
       }
     }
   }

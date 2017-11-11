@@ -81,12 +81,28 @@ public class WikiExtractor : ScriptableObject
     xmlCardPage.Load(WIKI_URL + xmlCardA.Attributes["href"].InnerText);
 
     //text
-    string text = "";
-    XmlNode xmlUlFAQ = xmlCardPage.SelectSingleNode("//div[@id='mw-content-text']/ul");
+    string text = "<size=125%><b>Official FAQ</b></size>"+Environment.NewLine;
+    XmlNode xmlSpanFAQ = xmlCardPage.SelectSingleNode("//span[@id='Official_FAQ']");
+    XmlNode xmlUlFAQ = xmlSpanFAQ.ParentNode.NextSibling;
     foreach (XmlNode xmlLiFAQ in xmlUlFAQ.ChildNodes)
     {
-      text += "*" + FormatText(xmlLiFAQ);
+      text += "*<indent=3em>" + FormatText(xmlLiFAQ).Trim()+"</indent>"+Environment.NewLine;
     }
+
+    XmlNode xmlSpanOtherRules = xmlCardPage.SelectSingleNode("//span[@id='Other_Rules_clarifications']");
+    if (xmlSpanOtherRules != null)
+    {
+      XmlNode xmlUlOtherRules = xmlSpanOtherRules.ParentNode.NextSibling;
+      if ((xmlUlOtherRules != null) && (xmlUlOtherRules.Name=="ul") && xmlUlOtherRules.HasChildNodes)
+      {
+        text += Environment.NewLine+"<size=125%><b>Other rules clarifications</b></size>" + Environment.NewLine;
+        foreach (XmlNode xmlLiOtherRule in xmlUlOtherRules.ChildNodes)
+        {
+          text += "*<indent=3em>" + FormatText(xmlLiOtherRule).Trim() + "</indent>" + Environment.NewLine;
+        }
+      }
+    }
+
     elmCard.InnerText = text;
 
     //image
@@ -100,6 +116,7 @@ public class WikiExtractor : ScriptableObject
 
     return 1;
   }
+
 
   static string FormatText(XmlNode node)
   {

@@ -1,123 +1,204 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Cards>
   <Set id="Dominion">
-    <Card id="Cellar">*  Choose any number of cards from your hand; discard them all at once; then draw as many cards as you actually discarded. 
-*  If this causes you to shuffle, you will shuffle in the cards you discarded. 
-*  You do not have to let players see any but the top card discarded; however the number of cards you discard is public.
+    <Card id="Cellar">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Choose any number of cards from your hand; discard them all at once; then draw as many cards as you actually discarded.&lt;/indent&gt;
+*&lt;indent=3em&gt;If this causes you to shuffle, you will shuffle in the cards you discarded.&lt;/indent&gt;
+*&lt;indent=3em&gt;You do not have to let players see any but the top card discarded; however the number of cards you discard is public.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You cannot discard the Cellar, as it is no longer in your hand once played.&lt;/indent&gt;
 </Card>
-    <Card id="Chapel">*  You cannot trash the Chapel itself, since it is not in your hand after you play it.
+    <Card id="Chapel">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You cannot trash the Chapel itself, since it is not in your hand after you play it.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You choose all the cards you want to trash, and then trash them at the same time; you don't trash them one-by-one. This matters for interactions with Dark Ages cards with on-trash abilities.&lt;/indent&gt;
+*&lt;indent=3em&gt;You can trash a different Chapel from your hand, if one is there.&lt;/indent&gt;
 </Card>
-    <Card id="Moat">*  An Attack card says "Attack" on the bottom line; in this set, Bandit, Bureaucrat, Militia, and Witch are Attacks. 
-*  When another player plays an Attack card, you may reveal a Moat from your hand, before the Attack does anything, to be unaffected by the Attack - you do not reveal cards to Bandit, or put a Victory card on your deck for Bureaucrat, or discard for Militia, or gain a Curse for Witch. 
-*  Moat stays in your hand, and can still be played on your next turn. 
-*  Moat does not stop anything an Attack does to other players, or for the player who played it; it just protects you personally. 
-*  Moat can also be played on your turn for +2 Cards. 
-*  If multiple Attacks are played on a turn or in a round of turns, you may reveal Moat for as many of them as you want.
+    <Card id="Moat">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;An Attack card says "Attack" on the bottom line; in this set, Bandit, Bureaucrat, Militia, and Witch are Attacks.&lt;/indent&gt;
+*&lt;indent=3em&gt;When another player plays an Attack card, you may reveal a Moat from your hand, before the Attack does anything, to be unaffected by the Attack - you do not reveal cards to Bandit, or put a Victory card on your deck for Bureaucrat, or discard for Militia, or gain a Curse for Witch.&lt;/indent&gt;
+*&lt;indent=3em&gt;Moat stays in your hand, and can still be played on your next turn.&lt;/indent&gt;
+*&lt;indent=3em&gt;Moat does not stop anything an Attack does to other players, or for the player who played it; it just protects you personally.&lt;/indent&gt;
+*&lt;indent=3em&gt;Moat can also be played on your turn for +2 Cards.&lt;/indent&gt;
+*&lt;indent=3em&gt;If multiple Attacks are played on a turn or in a round of turns, you may reveal Moat for as many of them as you want.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Using a Moat to block an Attack does not give you +2 cards at the time; you only get the +2 cards when you play the Moat during the Action phase of your own turn.&lt;/indent&gt;
+*&lt;indent=3em&gt;The ONLY thing that determines whether a card is an Attack card is whether it says "Attack" on the bottom. Not all cards which can hurt you are Attack cards, and not all Attack cards will hurt you.&lt;/indent&gt;
+*&lt;indent=3em&gt;You can only reveal Moat when an Attack card is played, not when it is bought or gained, even if it affects you at that time.&lt;/indent&gt;
+*&lt;indent=3em&gt;If an Attack card allows the player who played it to make a decision, like Minion or Pirate Ship, you must decide whether to reveal Moat before the player decides what function of the Attack card to use.&lt;/indent&gt;
 </Card>
-    <Card id="Harbinger">*  First draw a card and get +1 Action; then look through your discard pile, and you may put a card from it on top of your deck. 
-*  Putting a card on top is optional.
+    <Card id="Harbinger">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;First draw a card and get +1 Action; then look through your discard pile, and you may put a card from it on top of your deck.&lt;/indent&gt;
+*&lt;indent=3em&gt;Putting a card on top is optional.&lt;/indent&gt;
 </Card>
-    <Card id="Merchant">*  When you play Merchant, you draw a card and get +1 Action. 
-*  If you end up playing a Silver later in the turn, it comes with +&lt;sprite="Coins" name="Coins_1"&gt;. 
-*  If you play more than one Merchant, each gives you +&lt;sprite="Coins" name="Coins_1"&gt; when you play that first Silver; but if you play more than one Silver, you only get the +&lt;sprite="Coins" name="Coins_1"&gt; for the first Silver.
+    <Card id="Merchant">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;When you play Merchant, you draw a card and get +1 Action.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you end up playing a Silver later in the turn, it comes with +&lt;sprite="Coins" name="Coins_1"&gt;.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you play more than one Merchant, each gives you +&lt;sprite="Coins" name="Coins_1"&gt; when you play that first Silver; but if you play more than one Silver, you only get the +&lt;sprite="Coins" name="Coins_1"&gt; for the first Silver.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;If you manage to play a Merchant after playing a Silver, the Merchant gives you no bonus (for the previous Silver or for any Silvers you might play later in the turn).&lt;/indent&gt;
+*&lt;indent=3em&gt;Playing Throne Room on Merchant will give you +&lt;sprite="Coins" name="Coins_2"&gt; when you play your first Silver.&lt;/indent&gt;
 </Card>
-    <Card id="Vassal">*  If the card is an Action card, you can play it, but do not have to. 
-*  If you do play it, you move it into your play area and follow its instructions; this does not use up one of your Action plays for the turn.
+    <Card id="Vassal">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;If the card is an Action card, you can play it, but do not have to.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you do play it, you move it into your play area and follow its instructions; this does not use up one of your Action plays for the turn.&lt;/indent&gt;
 </Card>
-    <Card id="Village">*  You draw a card and get +2 Actions.
+    <Card id="Village">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You draw a card and get +2 Actions.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;"+2 actions" does not mean that you must immediately play 2 actions; it means that you may, later in the turn, play 2 more actions. Playing those actions is not part of resolving Village.&lt;/indent&gt;
 </Card>
-    <Card id="Workshop">*  The card you gain comes from the Supply and is put into your discard pile. 
-*  You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; to increase how expensive of a card you gain; it always costs from &lt;sprite="Coins" name="Coins_0"&gt; to &lt;sprite="Coins" name="Coins_4"&gt;.
+    <Card id="Workshop">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;The card you gain comes from the Supply and is put into your discard pile.&lt;/indent&gt;
+*&lt;indent=3em&gt;You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; to increase how expensive of a card you gain; it always costs from &lt;sprite="Coins" name="Coins_0"&gt; to &lt;sprite="Coins" name="Coins_4"&gt;.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;The costs of cards may be reduced by other cards - Bridge, Princess, or Highway. When checking whether you can gain a card with Workshop, you look at its cost as modified by all Bridges and Highways that have been played, not its "original" cost.&lt;/indent&gt;
 </Card>
-    <Card id="Bureaucrat">*  A player with no cards in their deck will have the card they put on top become the only card in their deck.
+    <Card id="Bureaucrat">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;A player with no cards in their deck will have the card they put on top become the only card in their deck.&lt;/indent&gt;
 </Card>
-    <Card id="Gardens">*  For example, if you have 37 cards at the end of the game, each copy of Gardens you have is worth 3. 
-*  Use 8 copies of Gardens in a 2-player game, 12 copies for 3 or more players.
+    <Card id="Gardens">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;For example, if you have 37 cards at the end of the game, each copy of Gardens you have is worth 3.&lt;/indent&gt;
+*&lt;indent=3em&gt;Use 8 copies of Gardens in a 2-player game, 12 copies for 3 or more players.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Cards on your Island mat, Durations still in play at the end of the game, and cards set aside for Haven or Inheritance or for any other reason are also counted at the end of the game.&lt;/indent&gt;
 </Card>
-    <Card id="Militia">*  Players with 3 or fewer cards in hand do not discard any cards. 
-*  Players with more cards discard until they only have 3.
+    <Card id="Militia">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Players with 3 or fewer cards in hand do not discard any cards.&lt;/indent&gt;
+*&lt;indent=3em&gt;Players with more cards discard until they only have 3.&lt;/indent&gt;
 </Card>
-    <Card id="Moneylender">*  You only get the +&lt;sprite="Coins" name="Coins_3"&gt; if you actually trashed a Copper.
+    <Card id="Moneylender">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You only get the +&lt;sprite="Coins" name="Coins_3"&gt; if you actually trashed a Copper.&lt;/indent&gt;
 </Card>
-    <Card id="Poacher">*  You draw your one card before discarding. 
-*  If there are no empty piles, you do not discard. 
-*  If there is one empty pile, you discard one card; if there are two empty piles, you discard two cards, and so on. 
-*  This includes all Supply piles, including Curses, Coppers, Poacher itself, etc. 
-*  If you do not have enough cards to discard, just discard the rest of your hand.
+    <Card id="Poacher">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You draw your one card before discarding.&lt;/indent&gt;
+*&lt;indent=3em&gt;If there are no empty piles, you do not discard.&lt;/indent&gt;
+*&lt;indent=3em&gt;If there is one empty pile, you discard one card; if there are two empty piles, you discard two cards, and so on.&lt;/indent&gt;
+*&lt;indent=3em&gt;This includes all Supply piles, including Curses, Coppers, Poacher itself, etc.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you do not have enough cards to discard, just discard the rest of your hand.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Non-Supply piles, such as Spoils, do not matter to Poacher.&lt;/indent&gt;
 </Card>
-    <Card id="Remodel">*  You cannot trash the Remodel itself, since it is not in your hand after you play it. 
-*  If you do not have a card to trash, you do not gain one. 
-*  If you do gain a card, it comes from the Supply and is put into your discard pile. 
-*  The gained card does not need to cost exactly &lt;sprite="Coins" name="Coins_2"&gt; more than the trashed card; it can cost that much or less, and can even be another copy of the trashed card. 
-*  You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; to increase how expensive of a card you gain.
+    <Card id="Remodel">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You cannot trash the Remodel itself, since it is not in your hand after you play it.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you do not have a card to trash, you do not gain one.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you do gain a card, it comes from the Supply and is put into your discard pile.&lt;/indent&gt;
+*&lt;indent=3em&gt;The gained card does not need to cost exactly &lt;sprite="Coins" name="Coins_2"&gt; more than the trashed card; it can cost that much or less, and can even be another copy of the trashed card.&lt;/indent&gt;
+*&lt;indent=3em&gt;You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; to increase how expensive of a card you gain.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You must trash a card from your hand if you have one.&lt;/indent&gt;
 </Card>
-    <Card id="Smithy">*  You draw 3 cards.
+    <Card id="Smithy">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You draw 3 cards.&lt;/indent&gt;
 </Card>
-    <Card id="Throne Room">*  Playing an Action card from your hand is optional. 
-*  If you do play one, you resolve it completely, then play it a second time. 
-*  You cannot play other cards in-between (unless told to by the card, such as with Vassal or Throne Room itself). 
-*  Playing Action cards with Throne Room is just like playing Action cards normally, except it does not use up Action plays for the turn. 
-*  For example if you start a turn by playing Throne Room on Village, you would draw a card, get +2 Actions, draw another card, and get +2 Actions again, leaving you with 4 Actions. 
-*  If you Throne Room a Throne Room, you may play an Action card twice, then may play another Action card twice; you do not play one Action card four times.
+    <Card id="Throne Room">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Playing an Action card from your hand is optional.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you do play one, you resolve it completely, then play it a second time.&lt;/indent&gt;
+*&lt;indent=3em&gt;You cannot play other cards in-between (unless told to by the card, such as with Vassal or Throne Room itself).&lt;/indent&gt;
+*&lt;indent=3em&gt;Playing Action cards with Throne Room is just like playing Action cards normally, except it does not use up Action plays for the turn.&lt;/indent&gt;
+*&lt;indent=3em&gt;For example if you start a turn by playing Throne Room on Village, you would draw a card, get +2 Actions, draw another card, and get +2 Actions again, leaving you with 4 Actions.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you Throne Room a Throne Room, you may play an Action card twice, then may play another Action card twice; you do not play one Action card four times.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;When you play Throne Room and choose to target a Duration, the Throne Room stays out in play with the Duration that it affects. If you Throne Room a Throne Room which affects a Duration, the top-level Throne Room does not stay in play and gets cleaned up during the Clean-up phase of the turn. However, if the targeted Duration won't do anything next turn on its second execution (for example, if it is a Tactician), the Throne Room doesn't stay out.&lt;/indent&gt;
+*&lt;indent=3em&gt;Remember that Throne Room does NOT "double" a card - it simply makes you play it twice. It may have different effects the first and second time it is played, so remember to follow all the instructions on the card fully from top to bottom, and then go back and follow them a second time.&lt;/indent&gt;
 </Card>
-    <Card id="Bandit">*  First you gain a Gold from the Supply, putting it into your discard pile. 
-*  Then each other player, in turn order, reveals their top 2 cards, trashes one they choose that is a Treasure other than Copper (e.g. Silver or Gold), and discards the other revealed cards. 
-*  A player who did not reveal a Treasure card other than Copper simply discards both cards.
+    <Card id="Bandit">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;First you gain a Gold from the Supply, putting it into your discard pile.&lt;/indent&gt;
+*&lt;indent=3em&gt;Then each other player, in turn order, reveals their top 2 cards, trashes one they choose that is a Treasure other than Copper (e.g. Silver or Gold), and discards the other revealed cards.&lt;/indent&gt;
+*&lt;indent=3em&gt;A player who did not reveal a Treasure card other than Copper simply discards both cards.&lt;/indent&gt;
 </Card>
-    <Card id="Council Room">*  The other players draw a card whether they want to or not.
+    <Card id="Council Room">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;The other players draw a card whether they want to or not.&lt;/indent&gt;
 </Card>
-    <Card id="Festival">*  You get +2 Actions, +1 Buy, and +&lt;sprite="Coins" name="Coins_2"&gt;.
+    <Card id="Festival">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You get +2 Actions, +1 Buy, and +&lt;sprite="Coins" name="Coins_2"&gt;.&lt;/indent&gt;
 </Card>
-    <Card id="Laboratory">*  You draw 2 cards and get +1 Action.
+    <Card id="Laboratory">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You draw 2 cards and get +1 Action.&lt;/indent&gt;
 </Card>
-    <Card id="Library">*  You look at cards one at a time, putting each one into your hand or setting it aside, until you have 7 cards in hand; then you discard the set aside cards. 
-*  If you shuffle in the middle of doing this, you do not shuffle in the set aside cards. 
-*  Only Action cards can be set aside. 
-*  You are not forced to set aside Action cards; that is just an option. 
-*  If you already have 7 cards in hand to start, you do not draw any cards.
+    <Card id="Library">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You look at cards one at a time, putting each one into your hand or setting it aside, until you have 7 cards in hand; then you discard the set aside cards.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you shuffle in the middle of doing this, you do not shuffle in the set aside cards.&lt;/indent&gt;
+*&lt;indent=3em&gt;Only Action cards can be set aside.&lt;/indent&gt;
+*&lt;indent=3em&gt;You are not forced to set aside Action cards; that is just an option.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you already have 7 cards in hand to start, you do not draw any cards.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;If you have more than 7 cards in hand, you don't draw anything.&lt;/indent&gt;
+*&lt;indent=3em&gt;If your -1 Card token is on your deck when you play Library, take it off.&lt;/indent&gt;
 </Card>
-    <Card id="Market">*  You draw a card and get +1 Action, +&lt;sprite="Coins" name="Coins_1"&gt;, and +1 Buy.
+    <Card id="Market">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You draw a card and get +1 Action, +&lt;sprite="Coins" name="Coins_1"&gt;, and +1 Buy.&lt;/indent&gt;
 </Card>
-    <Card id="Mine">*  You can, for example, trash a Copper to gain a Silver, or trash a Silver to gain a Gold. 
-*  The Treasure you gain comes from the Supply and is put into your hand; you can play it for the same turn. 
-*  If you do not have a Treasure to trash, you do not gain one.
+    <Card id="Mine">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You can, for example, trash a Copper to gain a Silver, or trash a Silver to gain a Gold.&lt;/indent&gt;
+*&lt;indent=3em&gt;The Treasure you gain comes from the Supply and is put into your hand; you can play it for the same turn.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you do not have a Treasure to trash, you do not gain one.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You could also trash a Treasure to gain the same Treasure or a cheaper one.&lt;/indent&gt;
 </Card>
-    <Card id="Sentry">*  First you draw a card and get +1 Action. 
-*  Then you look at the top 2 cards of your deck. 
-*  You can trash both, or discard both, or put both back in either order; or you can trash one and discard one, or trash one and put one back, or discard one and put one back.
+    <Card id="Sentry">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;First you draw a card and get +1 Action.&lt;/indent&gt;
+*&lt;indent=3em&gt;Then you look at the top 2 cards of your deck.&lt;/indent&gt;
+*&lt;indent=3em&gt;You can trash both, or discard both, or put both back in either order; or you can trash one and discard one, or trash one and put one back, or discard one and put one back.&lt;/indent&gt;
 </Card>
-    <Card id="Witch">*  The Curses come from the Supply and are put into discard piles. 
-*  They are given out in turn order, which can matter when the Curse pile is low. 
-*  When the Curses are gone, you can still play Witch for +2 Cards.
+    <Card id="Witch">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;The Curses come from the Supply and are put into discard piles.&lt;/indent&gt;
+*&lt;indent=3em&gt;They are given out in turn order, which can matter when the Curse pile is low.&lt;/indent&gt;
+*&lt;indent=3em&gt;When the Curses are gone, you can still play Witch for +2 Cards.&lt;/indent&gt;
 </Card>
-    <Card id="Artisan">*  The card you gain comes from the Supply and is put into your hand. 
-*  You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; to increase how expensive a card you gain; it always costs from &lt;sprite="Coins" name="Coins_0"&gt; to &lt;sprite="Coins" name="Coins_5"&gt;. 
-*  After gaining the card, you put a card from your hand onto your deck; that can be the card you just gained, or a different card.
+    <Card id="Artisan">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;The card you gain comes from the Supply and is put into your hand.&lt;/indent&gt;
+*&lt;indent=3em&gt;You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; to increase how expensive a card you gain; it always costs from &lt;sprite="Coins" name="Coins_0"&gt; to &lt;sprite="Coins" name="Coins_5"&gt;.&lt;/indent&gt;
+*&lt;indent=3em&gt;After gaining the card, you put a card from your hand onto your deck; that can be the card you just gained, or a different card.&lt;/indent&gt;
 </Card>
-    <Card id="Chancellor">*  You must resolve the Chancellor (decide whether or not to discard your Deck by flipping it into your Discard pile) before doing other things on your turn, like deciding what to buy or playing another Action card.
-*  You may not look through your Deck as you discard it.
+    <Card id="Chancellor">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;You must resolve the Chancellor (decide whether or not to discard your Deck by flipping it into your Discard pile) before doing other things on your turn, like deciding what to buy or playing another Action card.&lt;/indent&gt;
+*&lt;indent=3em&gt;You may not look through your Deck as you discard it.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Putting your Deck in your Discard pile in this manner does not count as individually discarding each card in your deck, and you may not reveal Tunnels from your deck as you put it in your discard pile with Chancellor.&lt;/indent&gt;
 </Card>
-    <Card id="Woodcutter">*  During your Buy phase, you add &lt;sprite="Coins" name="Coins_2"&gt; to the total value of the Treasure cards played, and you may buy an additional card from the Supply.
+    <Card id="Woodcutter">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;During your Buy phase, you add &lt;sprite="Coins" name="Coins_2"&gt; to the total value of the Treasure cards played, and you may buy an additional card from the Supply.&lt;/indent&gt;
 </Card>
-    <Card id="Feast">*  The gained card goes into your Discard pile.
-*  It has to be a card from the Supply.
-*  You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; from Treasures or previous Actions (like the Market) to increase the cost of the card that you gain.
-*  If you use Throne Room on Feast, you will gain two cards, even though you can only trash Feast once. Gaining the card isn't contingent on trashing Feast; they're just two things that the card tries to make you do.
+    <Card id="Feast">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;The gained card goes into your Discard pile.&lt;/indent&gt;
+*&lt;indent=3em&gt;It has to be a card from the Supply.&lt;/indent&gt;
+*&lt;indent=3em&gt;You cannot use &lt;sprite="Coins" name="Coins_blank"&gt; from Treasures or previous Actions (like the Market) to increase the cost of the card that you gain.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you use Throne Room on Feast, you will gain two cards, even though you can only trash Feast once. Gaining the card isn't contingent on trashing Feast; they're just two things that the card tries to make you do.&lt;/indent&gt;
 </Card>
-    <Card id="Spy">*  Spy causes all players, including the one who played it, to reveal the top card of their Deck.
-*  Note that you draw your card for playing Spy before any cards are revealed.
-*  Anyone who does not have any cards left in their Deck shuffles in order to have something to reveal. Anyone who still has no cards to reveal doesn't reveal one.
-*  If players care about the order in which things happen for this, you do yourself first, then each other player in turn order.
-*  Revealed cards that aren't discarded are returned to the top of their players' Decks.
+    <Card id="Spy">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;Spy causes all players, including the one who played it, to reveal the top card of their Deck.&lt;/indent&gt;
+*&lt;indent=3em&gt;Note that you draw your card for playing Spy before any cards are revealed.&lt;/indent&gt;
+*&lt;indent=3em&gt;Anyone who does not have any cards left in their Deck shuffles in order to have something to reveal. Anyone who still has no cards to reveal doesn't reveal one.&lt;/indent&gt;
+*&lt;indent=3em&gt;If players care about the order in which things happen for this, you do yourself first, then each other player in turn order.&lt;/indent&gt;
+*&lt;indent=3em&gt;Revealed cards that aren't discarded are returned to the top of their players' Decks.&lt;/indent&gt;
+
+&lt;size=125%&gt;&lt;b&gt;Other rules clarifications&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;In a strict interpretation of the rules, each player reveals their card and returns it or discards it before the next player does, and for certain cards (such as Chariot Race), this can matter when it comes to deciding which each player should do.  However, in practice, it's usually fine for all players to reveal their cards at the same time for efficiency's sake, provided there's no effect in the game that cares about the order of revealing.&lt;/indent&gt;
 </Card>
-    <Card id="Thief">*  A player with just one card left reveals that last card and then shuffles to get the other card to reveal (without including the revealed card); a player with no cards left shuffles to get both of them. 
-*  A player who still doesn't have two cards to reveal after shuffling just reveals what they can.
-*  Each player trashes one Treasure card at most, of the attacker's choice from the two revealed cards, and then you gain any of the trashed cards that you want.
-*  You can only take Treasures just trashed—not ones trashed on previous turns. You can take none of them, all of them, or anything in between.
-*  Put the Treasures you decided to gain into your Discard pile. The ones you choose not to gain stay in the Trash pile.
+    <Card id="Thief">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;A player with just one card left reveals that last card and then shuffles to get the other card to reveal (without including the revealed card); a player with no cards left shuffles to get both of them.&lt;/indent&gt;
+*&lt;indent=3em&gt;A player who still doesn't have two cards to reveal after shuffling just reveals what they can.&lt;/indent&gt;
+*&lt;indent=3em&gt;Each player trashes one Treasure card at most, of the attacker's choice from the two revealed cards, and then you gain any of the trashed cards that you want.&lt;/indent&gt;
+*&lt;indent=3em&gt;You can only take Treasures just trashed—not ones trashed on previous turns. You can take none of them, all of them, or anything in between.&lt;/indent&gt;
+*&lt;indent=3em&gt;Put the Treasures you decided to gain into your Discard pile. The ones you choose not to gain stay in the Trash pile.&lt;/indent&gt;
 </Card>
-    <Card id="Adventurer">*  If you have to shuffle in the middle, shuffle. Don't shuffle in the revealed cards as these cards do not go to the Discard pile until you have finished revealing cards.
-*  If you run out of cards after shuffling and still only have one Treasure, you get just that one Treasure.
+    <Card id="Adventurer">&lt;size=125%&gt;&lt;b&gt;Official FAQ&lt;/b&gt;&lt;/size&gt;
+*&lt;indent=3em&gt;If you have to shuffle in the middle, shuffle. Don't shuffle in the revealed cards as these cards do not go to the Discard pile until you have finished revealing cards.&lt;/indent&gt;
+*&lt;indent=3em&gt;If you run out of cards after shuffling and still only have one Treasure, you get just that one Treasure.&lt;/indent&gt;
 </Card>
   </Set>
 </Cards>

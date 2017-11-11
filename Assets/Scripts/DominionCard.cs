@@ -20,6 +20,11 @@ namespace AugmentedDominion
       cards[id] = this;
     }
 
+    public string getId()
+    {
+      return id;
+    }
+
     public string getName()
     {
       return name;
