@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using EasyAR;
 using System.Xml;
-using TMPro;
+
 
 namespace AugmentedDominion
 {
@@ -21,24 +21,20 @@ namespace AugmentedDominion
     public GameObject cardPrefab;
     private ImageTrackerBehaviour imageTrackerBehaviour;    
     private int cardsLoaded = 0;
-
-    private GameObject cardInfoPanel;
-    private Text cardNameText;
-    private TextMeshProUGUI cardDescriptionText;
+    
     private Text loadingText;
+    private CardInfoPanelBehaviour currentUIBehaviour;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
       instance = this;
 
       //init UI
       imageTrackerBehaviour=GameObject.Find("ImageTracker").GetComponent<ImageTrackerBehaviour>();
       loadingText= GameObject.Find("LoadingText").GetComponent<Text>();
-      cardNameText = GameObject.Find("CardNameText").GetComponent<Text>();
-      cardDescriptionText = GameObject.Find("CardDescriptionText").GetComponent<TextMeshProUGUI>();
-      cardInfoPanel = GameObject.Find("CardInfoPanel");
-      cardInfoPanel.SetActive(false);
+      currentUIBehaviour = GameObject.Find("CardInfoPanel").GetComponent<CardInfoPanelBehaviour>();
+    //  currentUIBehaviour.gameObject.SetActive(false);
 
       //load cards.xml
       TextAsset textAsset = (TextAsset)Resources.Load("cards", typeof(TextAsset));
@@ -78,14 +74,12 @@ namespace AugmentedDominion
 
     public void OnCardFound(DominionCard card)
     {
-      cardInfoPanel.SetActive(true);
-      cardNameText.text = card.getName();
-      cardDescriptionText.text = card.getDescription();
+      currentUIBehaviour.OnCardFound(card);
     }
 
     public void OnCardLost(DominionCard card)
     {
-      cardInfoPanel.SetActive(false);
+      currentUIBehaviour.OnCardLost(card);
     }
 
     private void UpdateLoadingText()

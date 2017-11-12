@@ -45,7 +45,7 @@ public class WikiExtractor : ScriptableObject
   static int ExtractSet(XmlNode xmlSetA, XmlElement elmCards)
   {
     string setName = xmlSetA.InnerText;
-    if (setName != "Dominion") return 0;
+    if ((setName != "Dominion") && (setName != "Hinterlands")) return 0;
     Debug.Log(setName + " => " + xmlSetA.Attributes["href"].InnerText);
 
     XmlElement elmSet = elmCards.OwnerDocument.CreateElement("Set");
@@ -139,6 +139,7 @@ public class WikiExtractor : ScriptableObject
         string spriteName="";
         if (imgName == "Coin.png") spriteName = "Coins_blank";
         else if (imgName.StartsWith("Coin")) spriteName = "Coins_" + imgName.Substring(4, 1);
+        else if (imgName == "Potion.png") spriteName = "Coins_potion";
         else return "";
 
         return "<sprite=\"Coins\" name=\""+spriteName+"\">";

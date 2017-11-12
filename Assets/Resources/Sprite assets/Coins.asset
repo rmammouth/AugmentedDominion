@@ -170,6 +170,20 @@ MonoBehaviour:
     unicode: 0
     pivot: {x: -8, y: 8}
     sprite: {fileID: 21300020, guid: aa46c55a51b8e6f4396573317f9107c8, type: 3}
+  - id: 11
+    x: 48
+    y: 16
+    width: 16
+    height: 16
+    xOffset: -1
+    yOffset: 13
+    xAdvance: 16
+    scale: 1
+    name: Coins_potion
+    hashCode: -113219324
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300022, guid: aa46c55a51b8e6f4396573317f9107c8, type: 3}
   fallbackSpriteAssets: []
 --- !u!21 &21234275407849198
 Material:

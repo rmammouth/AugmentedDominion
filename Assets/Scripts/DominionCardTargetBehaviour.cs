@@ -20,14 +20,16 @@ namespace AugmentedDominion
     {
       Debug.Log("Found: " + Target.Name);
       DominionCard card = DominionCard.getCard(Target.Name);
-      AugmentedDominionBehaviour.Instance.OnCardFound(card);
+      if (card == null) Debug.LogError("Card " + Target.Name + " not found in repository");
+      else AugmentedDominionBehaviour.Instance.OnCardFound(card);
     }
 
     void OnTargetLost(TargetAbstractBehaviour behaviour)
     {
       Debug.Log("Lost: " + Target.Name);
       DominionCard card = DominionCard.getCard(Target.Name);
-      AugmentedDominionBehaviour.Instance.OnCardLost(card);
+      if (card == null) Debug.LogError("Card " + Target.Name + " not found in repository");
+      else AugmentedDominionBehaviour.Instance.OnCardLost(card);
     }
 
     void OnTargetLoad(ImageTargetBaseBehaviour behaviour, ImageTrackerBaseBehaviour tracker, bool status)
