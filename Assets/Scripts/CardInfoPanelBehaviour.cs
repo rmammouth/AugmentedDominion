@@ -9,6 +9,7 @@ namespace AugmentedDominion
   {
     private Text cardNameText;
     private TextMeshProUGUI cardDescriptionText;
+    private Scrollbar cardInfoScrollbar;
     private bool autoCloseMode = false;
     private bool autoReplaceMode = true;
 
@@ -18,6 +19,7 @@ namespace AugmentedDominion
       gameObject.SetActive(true);
       cardNameText = GameObject.Find("CardNameText").GetComponent<Text>();
       cardDescriptionText = GameObject.Find("CardDescriptionText").GetComponent<TextMeshProUGUI>();
+      cardInfoScrollbar = GameObject.Find("CardInfoScrollbar").GetComponent<Scrollbar>();
       gameObject.SetActive(false);
     }
 
@@ -33,6 +35,7 @@ namespace AugmentedDominion
         gameObject.SetActive(true);
         cardNameText.text = card.getName();
         cardDescriptionText.text = card.getDescription();
+        cardInfoScrollbar.value = 1;
       }
     }
 
